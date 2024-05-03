@@ -1,24 +1,23 @@
-# omg_test
+# Project "ОМГ тестовое задание"
 
-## Project setup
-```
-npm install
-```
+## Project setup: npm install
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Running the project: npm run serve
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Описание:
 
-### Lints and fixes files
-```
-npm run lint
-```
+Функция `fillArray()` вызывается в хуке `mounted` для заполнения массива.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Описание функции `fillArray()`:
+
+- Функция `fillArray()` генерирует случайный массив, содержащий случайное количество строк и элементов в каждой строке.
+- Переменные `minRow` и `maxRow` определяют диапазон количества строк в массиве.
+- Переменные `minItem` и `maxItem` определяют диапазон количества элементов в каждой строке.
+- В функции используются два вложенных цикла `Array.from()`, чтобы создать массив и заполнить его случайными значениями.
+- Каждый элемент массива содержит его позицию + 1.
+
+### <template>:
+
+- В шаблоне используются 2 `v-for`.
+- Первый `v-for` отрисовывает строки массива, а вторая элементы в каждой строке.
+- Строки отображаются в блоках `.row`, а элементы в блоках `.item`.
